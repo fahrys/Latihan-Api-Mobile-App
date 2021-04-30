@@ -1,83 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="10dp">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Update Record"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name :"
-            android:textSize="18sp"/>
-
+            android:text="Nama"
+            android:textColor="@color/black"/>
         <EditText
-            android:layout_width="match_parent"
             android:id="@+id/etUpdateName"
+            android:layout_width="225dp"
             android:layout_height="wrap_content"
-            android:hint="Enter Name"/>
-
+            android:layout_marginStart="95dp"
+            android:hint="Enter Nama"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Company :"
-            android:textSize="18sp"/>
-
+            android:text="Company Name"
+            android:textColor="@color/black"/>
         <EditText
-            android:layout_width="match_parent"
-            android:id="@+id/etUpdateEmail"
+            android:id="@+id/etUpdateComp"
+            android:layout_width="225dp"
             android:layout_height="wrap_content"
-            android:hint="Enter Company Name"/>
-
-
+            android:layout_marginStart="30dp"
+            android:hint="Enter Company Name"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:gravity="end"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_marginTop="10dp"
+        android:gravity="end">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
             android:id="@+id/tvUpdate"
-            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
             android:padding="10dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="UPDATE"/>
+            android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
             android:id="@+id/tvCancel"
-            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:padding="10dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="CANCEL"/>
+            android:text="Cancel"
+            android:foreground="?attr/selectableItemBackgroundBorderless"/>
     </LinearLayout>
 
 </LinearLayout>

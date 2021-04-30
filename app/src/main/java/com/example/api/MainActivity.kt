@@ -97,11 +97,11 @@ class MainActivity : AppCompatActivity() {
         updateDialog.setContentView(R.layout.update_dialog)
 
         updateDialog.etUpdateName.setText(CEOModel.name)
-        updateDialog.etUpdateEmail.setText(CEOModel.company_name)
+        updateDialog.etUpdateComp.setText(CEOModel.company_name)
 
         updateDialog.tvUpdate.setOnClickListener {
             val name = updateDialog.etUpdateName.text.toString()
-            val companyName = updateDialog.etUpdateEmail.text.toString()
+            val companyName = updateDialog.etUpdateComp.text.toString()
 
             if(name.isEmpty() && companyName.isEmpty()){
                 Toast.makeText(this,
