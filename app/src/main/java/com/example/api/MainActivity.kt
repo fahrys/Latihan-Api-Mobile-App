@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
 
             if(name.isEmpty() && companyName.isEmpty()){
                 Toast.makeText(this,
-                    "Masih Ada Field yang kosong, tolong lengkapi",
+                    "Masih Ada Field yang kosong, Tolong lengkapi",
                     Toast.LENGTH_LONG).show()
             }else{
                 val newCEO : CEOModel = CEOModel(null, name, companyName)
