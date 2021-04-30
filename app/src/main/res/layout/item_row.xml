@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/llMain"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvId"
+        android:text="Id"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:id="@+id/tvnama"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CompanyName"
+        android:layout_weight="1"
+        android:id="@+id/tvcompany"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/ivdelete"
+        android:layout_height="50dp"
+        android:contentDescription="image"
+        android:scaleType="center"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/ivedit"
+        android:layout_height="50dp"
+        android:contentDescription="image"
+        android:scaleType="center"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+
+</LinearLayout>
